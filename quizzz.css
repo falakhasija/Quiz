@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.head {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgb(69, 48, 104);
+    
+   
+}
+#anime{
+    font-size: 50px;
+    animation-name: anime;
+   
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+   
+    
+}
+@keyframes anime {
+    
+   0%{top: -3000px;}
+   100%{top: 50px;}
+
+}
+
+.main-div{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: lavender;
+
+}
+.inner{
+    width: 40vw;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow:0 1rem 1rem rgb(100, 96, 97);
+    position: relative;
+    animation-name: boxx;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes boxx {
+    0%{left: -2000px;}
+    100%{left: 45px;}
+    
+}
+.inner h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-top: 1rem 0 4rem 0;
+    color: palevioletred;
+}
+.inner li{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+input{
+    cursor: pointer;
+}
+#submit, .btn{
+    padding: 1rem 3rem;
+    outline:none;
+    font-size: 2rem;
+    font-size: 400;
+    display: block;
+    margin: auto;
+    border:none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: cornflowerblue;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: darkblue;
+}
+#showscore{
+    background-color: rgb(218, 203, 167);
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+}
+#showscore h3{
+    font-size: 3rem;
+    text-align: center;
+}
+#showscore .btn{
+    margin-top: 2rem;
+    background-color: rgb(236, 3, 3);
+    color: #fff;
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+#showscore .btn:hover{
+    transform: rotateY(180deg);
+}
+
+.scorearea{
+    display: none;
+}
